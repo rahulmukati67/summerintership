@@ -1,0 +1,24 @@
+<title>ASSIGNMENT1</title>
+<h1>ACROPOLIS INSTITUTE OF TECHNOLOGY AND RESEARCH</h1>
+<heading>GETTING RESULT OF STUDENT </HEADING><br>
+ENTER NAME OF STUDENT <input id = n1 /> <br> 
+Maths marks<input id = t1  /> <br>
+English marks<input id = t2 /> <br>
+Cs marks<input id = t3  /> <br>
+Physics marks<input id = t4 /> <br>
+BEEE marks<input id = t5 /> <br>
+
+<input type=button value = RESULT onclick="percentage()"/> <br>
+<output id=out1 />
+<script>
+function percentage()
+{
+a=parseInt(t1.value);
+b=parseInt(t2.value);
+c=parseInt(t3.value);
+d=parseInt(t4.value);
+e=parseInt(t5.value);
+r= (a+b+c+d+e)/5;
+out1.value ="student scored :" + r+"%"
+} 
+</script>
