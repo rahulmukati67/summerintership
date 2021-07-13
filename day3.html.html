@@ -1,0 +1,45 @@
+<style>
+.button { height:30px;width:30px; font-size:30px;color:red }
+.btn:hover {color:blue} 
+</style>
+
+
+<input id=p1><br>
+<input id=p2 ><br>
+
+<input class ="button btn" type=button value=+ onclick="add()" />
+<input class ="button btn" type=button value=- onclick="sub()" /> 
+<input class ="button btn" type=button value=/ onclick="div()" /> 
+<input class ="button btn" type=button value=* onclick="multi()" />
+<output class =button id=out1 />
+
+<script>
+function add()
+{
+a=parseInt(p1.value);
+b=parseInt(p2.value);
+c=a+b;
+out1.value="additon of two number is :" + c
+}
+function sub()
+{
+a=parseInt(p1.value);
+b=parseInt(p2.value);
+c=a-b;
+out1.value="subtraction of two number is :" + c 
+}
+function div()
+{
+a=parseInt(p1.value);
+b=parseInt(p2.value);
+c=a/b;
+out1.value="Divion of two number is :" + c
+}
+function multi()
+{
+a=parseInt(p1.value);
+b=parseInt(p2.value);
+c=a*b;
+out1.value="Multiplication of two number is :" + c
+}
+</script>
