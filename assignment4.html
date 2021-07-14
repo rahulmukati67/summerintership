@@ -1,0 +1,38 @@
+<style>
+.btn {color: red ; font-size:30px ; width :30px }
+.btn:hover{ color : black }
+.t{color: blue ; font-size: 20px}
+</style>
+<table border = 0>
+<tr><td>1st Number is :</td><td><input  id = p1 ></td><br>
+<tr><td>2nd Number is :</td><td><input  id = p2 ></td><br>
+
+</table><br>
+<input class =" btn" type=button value=+ onclick="digit(this)"  />
+<input class =" btn" type=button value=- onclick="digit(this)"  /> 
+<input class =" btn" type=button value=* onclick="digit(this)" /> 
+<input class =" btn" type=button value=/ onclick="digit(this)" />
+<br><br>
+<div  class =" t" font = 20 id =d1></div>
+
+
+ 
+<script>
+
+function digit(n)
+{	
+ a=parseFloat(p1.value)
+ b=parseFloat(p2.value)
+ if(n.value =="+")
+ c=a+b
+ else if(n.value == "-")
+ c=a-b
+ else if (n.value =="*")
+ c=a*b 
+ else 
+ c=a/b
+
+ d1.innerHTML= 'RESULT :' +c
+}
+	
+</script>	
