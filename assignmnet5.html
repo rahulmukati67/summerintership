@@ -1,0 +1,55 @@
+
+<a href =home.html>home</a>
+<a href =login.html>login</a>
+<a href =registration.html>registration</a>
+<a href =contact.html>contact</a> <br> <br>
+
+<h1> REGISTRATION FORM </h1>
+<p>acropolis institute of technology and research</p>
+<form action=registration.html onsubmit="return show()">
+
+<table border = "0">
+<tr><td>First Name<td><input required pattern="[A-Za-z]{0,20}" id = nam>
+<tr><td>Second Name<td><input  required  pattern="[A-Za-z]{0,20}" id = nam1>
+<tr><td>Enrollnment<td><input  required  pattern ="[0-9]{4}[A-Z]{2}[0-9]{6}" id = enrl>
+<tr><td>Email<td><input  pattern=
+	"[0-9-a-zA-Z-.]{1,20}[@][a-zA-Z-.]{1,20}[.][a-zA-Z-.]{1,20}" id = email>
+<tr><td>country<td><select  id = country><option> USA</option> <option>INDIA </option> <option>UAE</option> <option> JAPAN </option>  </select>
+<tr><td>branch<td><select  id = branch><option> CSIT</option> <option>CSE ANIML</option> <option>IT</option> <option> CSE </option>  </select>
+<tr><td>Date of birth<td><input  required   type = date id = date>
+<tr><td>Id<td><input  required  pattern="[0-9-a-zA-Z]{1,20}" id= userid>
+<tr><td>Password<td><input   required type = "password" id=password >
+<tr><td><input type =submit value=Register ></td></tr>
+</table>
+</form>
+<p id=p1> </p>
+	
+<script>
+function show()
+{
+	a=nam.value
+	i=nam1.value
+	b=enrl.value
+	c=email.value
+	d=date.value
+	e=userid.value
+	f=password.value
+	g=country.value
+	h=branch.value
+	x="<table border = 1>"
+	x= x+" <tr><th>FIRST NAME<th> SECOND NAME<th>ENROLLMENT NO.<th>email<th>DATE<th>USER ID <th>PASSWORD<th>country<th>branch"            
+    x= x + "<tr><td> " +a
+    x=x + " <td> " + i 
+    
+    x=x + " <td> " + b 
+    x=x + " <td> " + c
+    x=x + " <td> " + d 
+    x=x + " <td> " + e
+    x=x + " <td> " + f
+    x=x + " <td> " + g
+    x=x + " <td> " + h
+	x=x+"</tabel>"
+	p1.innerHTML= x
+}
+
+</script>
