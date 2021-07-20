@@ -1,0 +1,4 @@
+<center>
+<video  src=samplevideo.mp4  width=400 height=400 controls />
+<audio  src=sampleaudio.mp3  width=300 height=300 controls />
+</center>
